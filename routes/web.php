@@ -24,6 +24,9 @@ Route::post('/keluhan', [KeluhanController::class, 'kirim'])->name('hasilkeluh.k
 Route::get('/beranda', function () {
     return view('beranda');
 });
+Route::get('/tugas', function () {
+    return view('tugas');
+});
 Route::get('/about', function () {
     return view('pages.about');
 })->middleware('auth');
